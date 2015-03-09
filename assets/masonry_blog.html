@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]-->
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    
+    <!-- Mobile Specific Metas
+    +++++++++++++++++++++++++++ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>ShowRoom - Blog full width</title>
+    
+    <!-- Styles
+    +++++++++++++ -->	
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/base_responsive.css">
+    <!-- Fonts&Plugins -->
+    <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+    <link rel="stylesheet" type="text/css" href="css/tipsy.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio_isotope.css" />
+    <link rel="stylesheet" href="css/camera.css">
+    
+    <!-- Scripts
+    +++++++++++++ -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.2/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.form.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/sorting.js"></script>
+    <script type='text/javascript' src='js/camera.min.js'></script>
+    <script type="text/javascript" src="js/jflickrfeed.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/fakeElement.js"></script>
+    <script type="text/javascript" src="js/jquery.carousel.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.masonry.min.js" ></script>
+    <!-- Main Scrip Run -->
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body class="masonry_blog_body">
+	<img src="img/my_preloader1.gif" id="preloader">
+	<!-- H E A D E R -->
+	<header>
+    	<a href="home.html" class="logo"><img src="img/logo.jpg" alt=""></a>
+  <script type="text/javascript">
+			var noAudio = false;
+			if(
+				navigator.userAgent.match(/webOS/i) ||
+				navigator.userAgent.match(/iPhone/i) ||
+				navigator.userAgent.match(/iPod/i))
+			{
+				noAudio = true;
+			}
+			$(document).ready(function(){			
+				if (!noAudio) {				
+					$("#jquery_jplayer_1").jPlayer({
+						ready: function (event) {
+							$(this).jPlayer("setMedia", {
+								mp3:"media/track.mp3",
+								oga:"media/track.ogg"
+							});						
+						},
+						swfPath: "js",
+						supplied: "mp3, oga",
+						wmode: "window"		
+					});
+				}
+			});
+        </script>
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-single">
+				<div class="jp-gui jp-interface">
+					<div class="jp-controls">
+                        <a href="javascript:void(0)" class="jp-play"></a>
+                        <a href="javascript:void(0)" class="jp-pause"></a>					</div>
+				</div>
+			</div>
+		</div>
+<nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+  <li><a href="javascript:void(0)">portfolio</a>
+                    <ul class="sub-menu">
+                        <li><a href="portfolio1.html">1 Column</a></li>
+                        <li><a href="portfolio2.html">2 Columns</a></li>
+                        <li><a href="portfolio3.html">3 Columns</a></li>
+                        <li><a href="portfolio4.html">4 Columns</a></li>
+                        <li><a href="portfolio_grid.html">Grid Columns</a></li>
+                    </ul>
+                </li>
+  <li><a href="javascript:void(0)">features</a>
+                    <ul class="sub-menu">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="shortcodes.html">Shortcodes</a></li>
+                    </ul>
+                </li>
+  <li class="current-menu-item"><a href="javascript:void(0)">blog</a>
+                    <ul class="sub-menu">
+                        <li class="current-menu-item"><a href="masonry_blog.html">Masonry blog</a></li>
+                        <li><a href="blog_full.html">Full width</a></li>
+                        <li><a href="blogpost_full.html">Blog post</a></li>
+                        <li><a href="javascript:void(0)">With sidebar</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog_left.html">Left sidebar</a></li>
+                                <li><a href="blog_right.html">Right sidebar</a></li>
+                                <li><a href="blogpost_sidebar.html">Blog post</a></li>
+                            </ul>
+                      </li>
+                    </ul>
+                </li>
+  <li><a href="javascript:void(0)">contacts</a>
+                    <ul class="sub-menu">
+                        <li><a href="contact_full.html">Full width</a></li>
+                        <li><a href="contact_sidebar.html">With sidebar</a></li>
+                    </ul>
+                </li>                
+    </ul><!-- .menu -->
+        </nav>
+	    <nav class="mobile_header">
+            <select id="mobile_select"></select>
+        </nav>        
+        <div class="clear"></div>
+	</header>
+    <!-- C O N T E N T -->
+    <div class="content_wrapper">
+    	<div class="masonry_blog_block">
+        	<div class="masonry_blog">
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<img src="img/pictures/img_blog5.jpg" alt="">
+                            <div class="featured_image_wrapper"></div>
+                            <a href="img/pictures/img_blog5.jpg" class="ico_zoom prettyPhoto"><span></span></a>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_image"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>picture post. etis atis animatis!</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">8 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <article class="contentarea">
+                            <blockquote>
+                                <p>Quisque viverra ante ac eros etis atis animatis<br>luctus Nullam vel orci!</p>
+                            </blockquote>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">No comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<img src="img/pictures/img_blog2.jpg" alt="">
+                            <div class="featured_image_wrapper"></div>
+                            <a href="img/pictures/img_blog2.jpg" class="ico_zoom prettyPhoto"><span></span></a>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_image"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>picture post. etis atis animatis!</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">7 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_text"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>text post. vestibulum eget</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">9 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="camera_slider">
+                            <div class="camera_wrap camera_azure_skin masonry_blog_slider">
+                                <div data-thumb="img/camera_slider/img6.jpg" data-src="img/camera_slider/img6.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>sit amet</h3>
+                                        <p>Maecenas mattis suscipit neque!</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img2.jpg" data-src="img/camera_slider/img2.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>At vero eos et accusamus et.</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img4.jpg" data-src="img/camera_slider/img4.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>Vestibulum etus nulla, consect.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .camera_slider_run -->
+                            <div class="clear"><!-- ClearFix --></div>
+                        </div><!-- .camera_slider -->
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_slider"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>slider post. lorem ipsum dolor</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">15 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>                        
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<iframe width="100%" height="190" frameborder="0" class="video_frame" allowfullscreen="" src="http://www.youtube.com/embed/BTiZD7p_oTc?controls=1&amp;showinfo=0&amp;modestbranding=1&amp;wmode=opaque"></iframe>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_video"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>video post. sed sapiens</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">3 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="camera_slider">
+                            <div class="camera_wrap camera_azure_skin masonry_blog_slider">
+                                <div data-thumb="img/camera_slider/img5.jpg" data-src="img/camera_slider/img5.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>sit amet</h3>
+                                        <p>Maecenas mattis suscipit neque!</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img1.jpg" data-src="img/camera_slider/img1.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>At vero eos et accusamus et.</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img2.jpg" data-src="img/camera_slider/img2.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>Vestibulum etus nulla, consect.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .camera_slider_run -->
+                            <div class="clear"><!-- ClearFix --></div>
+                        </div><!-- .camera_slider -->
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_slider"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>slider post. lorem ipsum dolor</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">20 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>                        
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                            <div id="jquery_jplayer_2" class="jp-jplayer blog-audio" data-mp3="media/blog_track0.mp3" data-ogg="media/blog_track0.ogg"></div>
+                            <div id="jp_container_2" class="jp-audio">
+                                <div class="jp-type-single">
+                                    <div class="jp-gui jp-interface">
+                                        <ul class="jp-controls">
+                                            <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                            <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                        </ul>
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div class="jp-play-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                        <div class="jp-current-time"></div>
+                                        <div class="jp-seperator">|</div>
+                                        <div class="jp-duration"></div>
+                                        <ul class="jp-toggles">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- -->
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_audio"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>audio post. Die Antwoord - ninja</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">No comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<iframe height="190" width="100%" src="http://www.youtube.com/embed/G_GBwuYuOOs?controls=1&showinfo=0&modestbranding=1&wmode=opaque" frameborder="0" allowfullscreen class="alignright video_frame"></iframe>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_link"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>link post. duis ac sem dui</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">1 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->                
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<img src="img/pictures/img_blog3.jpg" alt="">
+                            <div class="featured_image_wrapper"></div>
+                            <a href="img/pictures/img_blog3.jpg" class="ico_zoom prettyPhoto"><span></span></a>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_image"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>picture post. etis atis animatis!</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">8 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <article class="contentarea">
+                            <blockquote>
+                                <p>Quisque viverra ante ac eros<br>luctus Nullam vel orci!</p>
+                                <span>Somebody Important</span>
+                            </blockquote>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">No comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<img src="img/pictures/img_blog4.jpg" alt="">
+                            <div class="featured_image_wrapper"></div>
+                            <a href="img/pictures/img_blog4.jpg" class="ico_zoom prettyPhoto"><span></span></a>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_image"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>picture post. etis atis animatis!</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">7 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_text"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>text post. vestibulum eget</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">9 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="camera_slider">
+                            <div class="camera_wrap camera_azure_skin masonry_blog_slider">
+                                <div data-thumb="img/camera_slider/img1.jpg" data-src="img/camera_slider/img1.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>sit amet</h3>
+                                        <p>Maecenas mattis suscipit neque!</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img2.jpg" data-src="img/camera_slider/img2.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>At vero eos et accusamus et.</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img3.jpg" data-src="img/camera_slider/img3.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>Vestibulum etus nulla, consect.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .camera_slider_run -->
+                            <div class="clear"><!-- ClearFix --></div>
+                        </div><!-- .camera_slider -->
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_slider"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>slider post. lorem ipsum dolor</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">15 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>                        
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<iframe width="100%" height="190" src="http://www.youtube.com/embed/BTiZD7p_oTc?controls=1&showinfo=0&modestbranding=1&wmode=opaque" frameborder="0" allowfullscreen class="video_frame"></iframe>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_video"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>video post. sed sapiens</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">3 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="camera_slider">
+                            <div class="camera_wrap camera_azure_skin masonry_blog_slider">
+                                <div data-thumb="img/camera_slider/img4.jpg" data-src="img/camera_slider/img4.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>sit amet</h3>
+                                        <p>Maecenas mattis suscipit neque!</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img5.jpg" data-src="img/camera_slider/img5.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>At vero eos et accusamus et.</p>
+                                    </div>
+                                </div>
+                                <div  data-thumb="img/camera_slider/img6.jpg" data-src="img/camera_slider/img6.jpg">
+                                    <div class="camera_caption fadeFromLeft">
+                                        <h3>Nulla facilisi</h3>
+                                        <p>Vestibulum etus nulla, consect.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .camera_slider_run -->
+                            <div class="clear"><!-- ClearFix --></div>
+                        </div><!-- .camera_slider -->
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_slider"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>slider post. lorem ipsum dolor</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">20 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>                        
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                            <div id="jquery_jplayer_3" class="jp-jplayer blog-audio" data-mp3="media/blog_track1.mp3" data-ogg="media/blog_track1.ogg"></div>
+                            <div id="jp_container_3" class="jp-audio">
+                                <div class="jp-type-single">
+                                    <div class="jp-gui jp-interface">
+                                        <ul class="jp-controls">
+                                            <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                            <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                        </ul>
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div class="jp-play-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                        <div class="jp-current-time"></div>
+                                        <div class="jp-seperator">|</div>
+                                        <div class="jp-duration"></div>
+                                        <ul class="jp-toggles">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- -->
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_audio"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>audio post. Die Antwoord - ninja</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">No comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                        	<iframe width="100%" height="190" src="http://www.youtube.com/embed/G_GBwuYuOOs?controls=1&showinfo=0&modestbranding=1&wmode=opaque" frameborder="0" allowfullscreen class="video_frame"></iframe>
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_link"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>link post. duis ac sem dui</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">1 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="blogpost_title"><span class="blog_posttype blog_text"></span><a href="blogpost_full.html" class="mainTitlePermalink"><h3>text post. vestibulum eget</h3></a></div>
+                        <article class="contentarea">
+	                        <p>Duis ac sem dui. Vestibulum id ante felis. Morbi sapien sems iaculisеtes et molestie ut, venenatis sed nulla. Nullam a eget tellus. <a href="#">Read more...</a></p>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">9 comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <article class="contentarea">
+                            <blockquote>
+                                <p>Quisque viverra ante ac eros etis atis animatis<br>luctus Nullam vel orci!</p>
+                                <span>Somebody Important</span>
+                            </blockquote>
+                        </article>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">No comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->       
+            	<div class="blog_item">
+                	<div class="preview_wrapper">
+                    	<div class="featured_image_full">
+                            <div id="jquery_jplayer_4" class="jp-jplayer blog-audio" data-mp3="media/blog_track2.mp3" data-ogg="media/blog_track2.ogg"></div>
+                            <div id="jp_container_4" class="jp-audio">
+                                <div class="jp-type-single">
+                                    <div class="jp-gui jp-interface">
+                                        <ul class="jp-controls">
+                                            <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                            <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                        </ul>
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div class="jp-play-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                        <div class="jp-current-time"></div>
+                                        <div class="jp-seperator">|</div>
+                                        <div class="jp-duration"></div>
+                                        <ul class="jp-toggles">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- -->
+                        </div>
+                        <div class="blog_info">
+                        	25 apr 2019 in <a href="#">Art</a>. Tags: <a href="#">art,</a> <a href="#">amsterdam,</a> <a href="#">city</a>
+                        </div>
+                        <hr class="masonry_blog_seperator">
+                        <div class="post_bottom">
+                        	<div class="comments">No comments <span>|</span> <a href="#">View all</a></div>
+                            <div class="share">
+                            	<span>Share on</span><a href="#" class="share_twitter share_icon"></a><a href="#" class="share_pinterest share_icon"></a><a href="#" class="share_facebook share_icon"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- .blog_item -->
+                         
+                <div class="clear"><!-- ClearFix --></div>
+            </div>
+        </div><!-- .masonry_blog_block -->
+        <script type="text/javascript">
+        	$(window).load(function(){
+				setTimeout("masonry_blog()",500);
+			});
+			$(window).resize(function(){
+				masonry_blog();
+			});			
+			function masonry_blog() {
+				blog_itemInRow = 5;
+				if ($(window).width() > 0) blog_itemInRow = 1;
+				if ($(window).width() > 600) blog_itemInRow = 2;
+				if ($(window).width() > 875) blog_itemInRow = 3;
+				if ($(window).width() > 1200) blog_itemInRow = 4;
+				if ($(window).width() > 1440) blog_itemInRow = 5;
+				column_size = Math.floor((($(window).width()-5)/blog_itemInRow));
+				$('.masonry_blog').find('.blog_item').width(column_size);
+				$('.masonry_blog').find('.jp-progress').width(column_size-180);
+				setTimeout("$('.masonry_blog').masonry({itemSelector: '.blog_item', columnWidth: column_size})",500);
+			}
+        </script>
+    </div>
+    <!-- F O O T E R -->
+    <footer>
+    	<div class="call_us"><div>feel free to call us: 8 800 456 78 90</div><span>|</span><div class="copy">&copy; 2020 Companyname. All Rights Reserved</div></div>
+<ul class="socials">
+        	<li><a href="#" class="ico ico_facebook" title="Facebook"></a></li>
+            <li><a href="#" class="ico ico_twitter" title="Twitter"></a></li>
+            <li><a href="#" class="ico ico_vimeo" title="Vimeo"></a></li>
+            <li><a href="#" class="ico ico_youtube" title="YouTube"></a></li>
+            <li><a href="#" class="ico ico_tumblr" title="Tumbler"></a></li>
+            <li><a href="#" class="ico ico_dribbble" title="Dribbble"></a></li>
+            <li><a href="#" class="ico ico_delicious" title="Delicious"></a></li>
+            <li><a href="#" class="ico ico_digg" title="Digg"></a></li>
+        </ul>
+</footer>
+</body>
+</html>
