@@ -134,15 +134,15 @@
 		  		  alert('Wrong File Path');
 				  $("#file_upload").show();
 		  }else{
-			$("#preview-img").html("<img src='tmp/"+data+"' style='width:100%!important;height:auto!important'><div class='featured_image_wrapper'> x ลบรูปภาพ</div>");
+			$("#preview-img").html("<img src='tmp/"+data+"' style='width:100%!important;height:auto!important'><div class='featured_image_wrapper' onclick='deletePic('"+data+"');return false;'><a href='#'>x ลบรูปภาพ</a></div>");
 			$("#file_name").val(data);
-			$("#file_upload").hide();
 		  }
-       }
+       },
+	   'onUploadComplete' : function(file) {
+		   $("#file_upload").hide();
+	   }
 
     });
-	
-	
 	
 	$('#tags').tagEditor({
        autocomplete: { delay: 0, position: { collision: 'flip' }, source: [<?php echo getTagSugguest()?>] },
@@ -160,6 +160,12 @@
 
   });
   
+  function deletePic(filename)
+  {
+	  $("#preview-img").html('');
+	  $("#file_upload").show();
+	  
+  }
 
   function getLocation()
   {
