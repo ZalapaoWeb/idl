@@ -134,7 +134,7 @@
 		  		  alert('Wrong File Path');
 				  $("#file_upload").show();
 		  }else{
-			$("#preview-img").html("<img src='tmp/"+data+"' style='width:100%!important;height:auto!important'><div class='featured_image_wrapper' onclick='deletePic('"+data+"');return false;'><a href='#'>x ลบรูปภาพ</a></div>");
+			$("#preview-img").html("<img src='tmp/"+data+"' style='width:100%!important;height:auto!important'><div class='featured_image_wrapper' onclick=\"deletePic('"+data+"');return false;\"><a href='javascript:;'>x ลบรูปภาพ</a></div>");
 			$("#file_name").val(data);
 		  }
        },
@@ -156,6 +156,13 @@
 	$(".numericOnly").keypress(function (e) {
     	if (String.fromCharCode(e.keyCode).match(/[^0-9]/g)) return false;
 	});
+	
+	$('#modalFillIn').on('hidden.bs.modal', function (e) {
+	  $("#preview-img").html('');
+	  $("#file_upload").show();
+	  $(this).find("input,textarea").val('').end();
+	  
+	})
 	 
 
   });

@@ -14,7 +14,7 @@
                     <div class="contentarea">
                         <div class="row">
                         	<div class="span_full module_google_map">
-                            	<iframe width="100%" height="440" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.ua/maps?hl=en&amp;q=%D0%B2%D0%B0%D1%88%D0%B8%D0%BD%D0%B3%D1%82%D0%BE%D0%BD&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%92%D0%B0%D1%88%D0%B8%D0%BD%D0%B3%D1%82%D0%BE%D0%BD,+District+of+Columbia,+%D0%9E%D0%BA%D1%80%D1%83%D0%B3+%D0%9A%D0%BE%D0%BB%D1%83%D0%BC%D0%B1%D0%B8%D1%8F,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;ll=38.895112,-77.036366&amp;spn=0.052648,0.077333&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+                            	<iframe width="100%" height="440" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.ua/maps?hl=en&amp;q=กรุงเทพมหานคร&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%92%D0%B0%D1%88%D0%B8%D0%BD%D0%B3%D1%82%D0%BE%D0%BD,+District+of+Columbia,+%D0%9E%D0%BA%D1%80%D1%83%D0%B3+%D0%9A%D0%BE%D0%BB%D1%83%D0%BC%D0%B1%D0%B8%D1%8F,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;t=m&amp;z=14&amp;output=embed"></iframe>
                             </div>
                             <div class="span_full">
                             	<h3><span>contact information</span></h3>   <!-- 
