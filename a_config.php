@@ -3,8 +3,8 @@ if($SERVER_NAME=="localhost"){
 DEFINE("DB_HOST", "localhost"); 
 DEFINE("DB_NAME", "zalapao_idl"); 
 DEFINE("DB_USER", "root"); 
-DEFINE("DB_PSW", "");
-DEFINE("PRO_URL", "http://localhost/idl/");
+DEFINE("DB_PSW", "1234");
+DEFINE("PRO_URL", "http://localhost/git/idl/");
 }else{ 
 #phpMyAdmin URL : http://27.254.148.144/phpMyAdmin/
 DEFINE("DB_HOST", "localhost"); 
