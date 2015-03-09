@@ -1,4 +1,4 @@
-
+<?php $list_tags = getTagSugguest('all');?>
     <div class="header_filter">
     	<img src="assets/img/filter_arrow.png" class="arrow" alt="">
         <div class="share_block">
@@ -17,16 +17,14 @@
                     <li>
                         <ul class="optionset" data-option-key="filter">
                             <li class="selected"><a href="#filter" data-option-value="*">ทั้งหมด</a></li>
-                            <li class="sep">:</li>
-                            <li><a href="#filter" data-option-value=".portraits">ข้าวราดแกง</a></li>
-                            <li class="sep">:</li>
-                            <li><a href="#filter" data-option-value=".fashion">ก๋วยเตี๋ยว</a></li>
-                            <li class="sep">:</li>
-                            <li><a href="#filter" data-option-value=".landscapes">อาหารญี่ปุ่น</a></li>
-                            <li class="sep">:</li>
-                            <li><a href="#filter" data-option-value=".advertising">อาหารตามสั่ง</a></li>
-                            <li class="sep">:</li>
-                            <li><a href="#filter" data-option-value=".else">เพื่อสุขภาพ</a></li>
+                            <?php if(is_array($list_tags)) {
+								foreach($list_tags as $tg) {?>
+									<li class="sep">:</li>
+                            		<li><a href="#filter" data-option-value=".tag-<?php echo $tg['id']?>"><?php echo $tg['name']?></a></li>
+							<?php
+                            	}
+							}?>
+                           
                         </ul>
                     </li>
                 </ul>

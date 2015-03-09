@@ -46,8 +46,8 @@
 
     <!-- Scripts
     +++++++++++++ -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.8.2/jquery-ui.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" type="text/javascript"></script>
     <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/jquery.tipsy.js"></script>
     <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
